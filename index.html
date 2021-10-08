@@ -1,0 +1,43 @@
+ 
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js" target="_blank"></script>
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+     <h1 id="imi">Image identifier</h1>
+    <h2 id="sam">the objects to identify are :</h2>
+    <div>
+      <br>
+      <h2 id="chill">dad</h2>
+      <h2 id="technoblade">MEME</h2>
+      <h2 id="never">mum</h2>
+      <h2 id="dies">brother</h2>
+      <br>
+    </div>
+    <div id="camera"></div>
+    <button id="capture" onclick="takeaphoto()">capture Image</button>
+    <div id="result"></div>
+    <button id="id" onclick="identify_photo()">identify the Image</button>
+    <h2> object = </h2><h2 id="object"></h2>
+    <h2> accuracy = </h2><h2 id="accuracy"></h2>
+    </center>
+  
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
